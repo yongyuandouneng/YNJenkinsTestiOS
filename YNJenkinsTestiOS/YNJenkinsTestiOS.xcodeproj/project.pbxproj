@@ -13,6 +13,7 @@
 		2E9D62562019A65C0042AEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D62552019A65C0042AEAA /* Assets.xcassets */; };
 		2E9D62592019A65C0042AEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D62572019A65C0042AEAA /* LaunchScreen.storyboard */; };
 		2E9D625C2019A65C0042AEAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D625B2019A65C0042AEAA /* main.m */; };
+		D2CBE3A74E4BFDDD680EBBD9 /* libPods-YNJenkinsTestiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E20DBCB4754BC51D248EF93 /* libPods-YNJenkinsTestiOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		2E9D62582019A65C0042AEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2E9D625A2019A65C0042AEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E9D625B2019A65C0042AEAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63347AB3155EDDDC92F34E45 /* Pods-YNJenkinsTestiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNJenkinsTestiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YNJenkinsTestiOS/Pods-YNJenkinsTestiOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8E20DBCB4754BC51D248EF93 /* libPods-YNJenkinsTestiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YNJenkinsTestiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A71C4D79ABA697BA30A34A47 /* Pods-YNJenkinsTestiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNJenkinsTestiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-YNJenkinsTestiOS/Pods-YNJenkinsTestiOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2CBE3A74E4BFDDD680EBBD9 /* libPods-YNJenkinsTestiOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +49,8 @@
 			children = (
 				2E9D624B2019A65C0042AEAA /* YNJenkinsTestiOS */,
 				2E9D624A2019A65C0042AEAA /* Products */,
+				7599AD57C6EE3F1C31279254 /* Pods */,
+				9471B1621A6BBDF68A6997DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +78,23 @@
 			path = YNJenkinsTestiOS;
 			sourceTree = "<group>";
 		};
+		7599AD57C6EE3F1C31279254 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				63347AB3155EDDDC92F34E45 /* Pods-YNJenkinsTestiOS.debug.xcconfig */,
+				A71C4D79ABA697BA30A34A47 /* Pods-YNJenkinsTestiOS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9471B1621A6BBDF68A6997DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E20DBCB4754BC51D248EF93 /* libPods-YNJenkinsTestiOS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2E9D625F2019A65C0042AEAA /* Build configuration list for PBXNativeTarget "YNJenkinsTestiOS" */;
 			buildPhases = (
+				9D22593C56C11B6AFA700FD2 /* [CP] Check Pods Manifest.lock */,
 				2E9D62452019A65C0042AEAA /* Sources */,
 				2E9D62462019A65C0042AEAA /* Frameworks */,
 				2E9D62472019A65C0042AEAA /* Resources */,
+				C1C6DD3651F5478AA0DBD46D /* [CP] Embed Pods Frameworks */,
+				5F2EE75BA01ECD0458F7A357 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -136,6 +163,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5F2EE75BA01ECD0458F7A357 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YNJenkinsTestiOS/Pods-YNJenkinsTestiOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D22593C56C11B6AFA700FD2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C1C6DD3651F5478AA0DBD46D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YNJenkinsTestiOS/Pods-YNJenkinsTestiOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2E9D62452019A65C0042AEAA /* Sources */ = {
@@ -276,6 +351,7 @@
 		};
 		2E9D62602019A65C0042AEAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63347AB3155EDDDC92F34E45 /* Pods-YNJenkinsTestiOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -294,6 +370,7 @@
 		};
 		2E9D62612019A65C0042AEAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A71C4D79ABA697BA30A34A47 /* Pods-YNJenkinsTestiOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";

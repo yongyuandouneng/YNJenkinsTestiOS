@@ -1,0 +1,5 @@
+target ‘YNJenkinsTestiOS’ do
+
+ pod 'MJRefresh', '~> 3.1.15.3'
+
+end
