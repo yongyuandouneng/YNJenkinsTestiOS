@@ -13,6 +13,7 @@
 		2E9D62562019A65C0042AEAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D62552019A65C0042AEAA /* Assets.xcassets */; };
 		2E9D62592019A65C0042AEAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D62572019A65C0042AEAA /* LaunchScreen.storyboard */; };
 		2E9D625C2019A65C0042AEAA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9D625B2019A65C0042AEAA /* main.m */; };
+		2E9D6263201A3C560042AEAA /* YNJenkinsTestiOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2E9D6262201A3C560042AEAA /* YNJenkinsTestiOS.plist */; };
 		D2CBE3A74E4BFDDD680EBBD9 /* libPods-YNJenkinsTestiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E20DBCB4754BC51D248EF93 /* libPods-YNJenkinsTestiOS.a */; };
 /* End PBXBuildFile section */
 
@@ -25,8 +26,8 @@
 		2E9D62532019A65C0042AEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2E9D62552019A65C0042AEAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2E9D62582019A65C0042AEAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2E9D625A2019A65C0042AEAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E9D625B2019A65C0042AEAA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2E9D6262201A3C560042AEAA /* YNJenkinsTestiOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = YNJenkinsTestiOS.plist; sourceTree = "<group>"; };
 		63347AB3155EDDDC92F34E45 /* Pods-YNJenkinsTestiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNJenkinsTestiOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YNJenkinsTestiOS/Pods-YNJenkinsTestiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		8E20DBCB4754BC51D248EF93 /* libPods-YNJenkinsTestiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YNJenkinsTestiOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A71C4D79ABA697BA30A34A47 /* Pods-YNJenkinsTestiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YNJenkinsTestiOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-YNJenkinsTestiOS/Pods-YNJenkinsTestiOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -65,6 +66,7 @@
 		2E9D624B2019A65C0042AEAA /* YNJenkinsTestiOS */ = {
 			isa = PBXGroup;
 			children = (
+				2E9D6262201A3C560042AEAA /* YNJenkinsTestiOS.plist */,
 				2E9D624C2019A65C0042AEAA /* AppDelegate.h */,
 				2E9D624D2019A65C0042AEAA /* AppDelegate.m */,
 				2E9D624F2019A65C0042AEAA /* ViewController.h */,
@@ -72,7 +74,6 @@
 				2E9D62522019A65C0042AEAA /* Main.storyboard */,
 				2E9D62552019A65C0042AEAA /* Assets.xcassets */,
 				2E9D62572019A65C0042AEAA /* LaunchScreen.storyboard */,
-				2E9D625A2019A65C0042AEAA /* Info.plist */,
 				2E9D625B2019A65C0042AEAA /* main.m */,
 			);
 			path = YNJenkinsTestiOS;
@@ -156,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E9D6263201A3C560042AEAA /* YNJenkinsTestiOS.plist in Resources */,
 				2E9D62592019A65C0042AEAA /* LaunchScreen.storyboard in Resources */,
 				2E9D62562019A65C0042AEAA /* Assets.xcassets in Resources */,
 				2E9D62542019A65C0042AEAA /* Main.storyboard in Resources */,
@@ -357,7 +359,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZUHH2H7M8;
-				INFOPLIST_FILE = YNJenkinsTestiOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YNJenkinsTestiOS/YNJenkinsTestiOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.bxtth.itm.client.YNJenkinsTestiOS;
@@ -376,7 +378,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3ZUHH2H7M8;
-				INFOPLIST_FILE = YNJenkinsTestiOS/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/YNJenkinsTestiOS/YNJenkinsTestiOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.bxtth.itm.client.YNJenkinsTestiOS;
