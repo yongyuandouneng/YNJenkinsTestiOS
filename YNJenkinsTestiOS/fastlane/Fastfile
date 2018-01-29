@@ -24,6 +24,7 @@ desc “adhoc”
     
     sigh(force: true,
     adhoc: true,
+
     output_path: "./build"
   )
     gym(workspace: "YNJenkinsTestiOS.xcworkspace", 

@@ -4,5 +4,9 @@ apple_id "1003580893@qq.com" # Your Apple email address
 itc_team_id "118889298" # iTunes Connect Team ID
 team_id "3ZUHH2H7M8" # Developer Portal Team ID
 
+FASTLANE_USER "1003580893@qq.com"
+FASTLANE_PASSWORD “Zhengyongneng1234”
+
+
 # For more information about the Appfile, see:
 #     https://docs.fastlane.tools/advanced/#appfile
