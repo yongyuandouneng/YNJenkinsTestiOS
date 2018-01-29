@@ -18,10 +18,10 @@ platform :ios do
     upload_to_app_store
   end
 
-
+#cocoapods
 desc “adhoc”
   lane :adhoc do
-    cocoapods
+    
     sigh(force: true,
     adhoc: true,
     output_path: "./build"
