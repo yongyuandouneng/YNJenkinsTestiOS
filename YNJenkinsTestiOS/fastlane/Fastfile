@@ -18,6 +18,11 @@ platform :ios do
     upload_to_app_store
   end
 
+before_all do
+    ENV["FASTLANE_USER"] = "1003580893@qq.com"
+    ENV["FASTLANE_PASSWORD"] = “Zhengyongneng1234”
+end
+
 #cocoapods
 desc “adhoc”
   lane :adhoc do
