@@ -30,10 +30,10 @@ end
 desc “adhoc”
   lane :adhoc do
     
-    sigh(force: true,
-    adhoc: true,
-    output_path: "./build"
-  )
+    #sigh(force: true,
+    #adhoc: true,
+    #output_path: "./build"
+  #)
     gym(workspace: "YNJenkinsTestiOS.xcworkspace", 
         scheme: "YNJenkinsTestiOS", 
         clean: true, 
