@@ -19,16 +19,16 @@ platform :ios do
   end
 
 before_all do
-    ENV["FASTLANE_USER"] = "1003580893@qq.com"
-    ENV["FASTLANE_PASSWORD"] = "Zhengyongneng1234"
+    #ENV["FASTLANE_USER"] = "1003580893@qq.com"
+    #ENV["FASTLANE_PASSWORD"] = “Zhengyongneng1234”
 
 #export FASTLANE_SESSION fastlane spaceauth -u 1003580893@qq.com
-ENV["FASTLANE_SESSION”]="—\n- !ruby/object:HTTP::Cookie\n  name: DES569e5a0717aef8d4abb29a6a52964aabb\n  value: HSARMTKNSRVTWFlaOdx64zcqxaR+Yt5x6h52Obxmdnqi4hj/tQ6cpZEpeUr36pq8N/hTrn1QuiNFH13wal4Ay+PRcwRTekxl8pKp+2LMPwZwu0G+hnqsXCZbwgA92PM=SRVT\n  domain: idmsa.apple.com\n  for_domain: true\n  path: "/"\n  secure: true\n  httponly: true\n  expires: \n  max_age: 2592000\n  created_at: 2018-01-26 17:57:54.246093000 +08:00\n  accessed_at: 2018-01-29 23:04:09.218337000 +08:00\n- !ruby/object:HTTP::Cookie\n  name: dqsid\n  value: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJTaFRfNzFOZVJvWHg0T3loTHh0Y1NnIn0.A6R0j4IEBGy6pJbI1Ooz9rNvcK8PsCZzO9B99km0DzM\n  domain: olympus.itunes.apple.com\n  for_domain: false\n  path: "/"\n  secure: true\n  httponly: true\n  expires: \n  max_age: 1800\n  created_at: &1 2018-01-29 23:04:18.734634000 +08:00\n  accessed_at: *1\n"
 end
 
-#cocoapods
 desc “adhoc”
   lane :adhoc do
+	
+    cocoapods
     
     sigh(force: true,
     adhoc: true,
